@@ -17,10 +17,10 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <osipparser2/internal.h>
+#include <internal.h>
 
-#include <osipparser2/osip_port.h>
-#include <osipparser2/osip_list.h>
+#include <osip_port.h>
+#include <osip_list.h>
 
 int osip_list_init(osip_list_t *li) {
   if (li == NULL)

@@ -17,11 +17,11 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <osipparser2/internal.h>
+#include <internal.h>
 
-#include <osipparser2/osip_port.h>
-#include <osipparser2/osip_message.h>
-#include <osipparser2/osip_parser.h>
+#include <osip_port.h>
+#include <osip_message.h>
+#include <osip_parser.h>
 #include "parser.h"
 
 int osip_message_set_call_info(osip_message_t *sip, const char *hvalue) {

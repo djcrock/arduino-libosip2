@@ -17,12 +17,12 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <osipparser2/internal.h>
+#include <internal.h>
 
-#include <osipparser2/osip_port.h>
-#include <osipparser2/osip_message.h>
-#include <osipparser2/osip_parser.h>
-#include <osipparser2/osip_body.h>
+#include <osip_port.h>
+#include <osip_message.h>
+#include <osip_parser.h>
+#include <osip_body.h>
 #include "parser.h"
 
 static int osip_body_parse_header(osip_body_t *body, const char *start_of_osip_body_header, const char **next_body);

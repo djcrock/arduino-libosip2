@@ -20,7 +20,7 @@
 #ifndef _OSIP_PROXY_AUTHENTICATION_INFO_H_
 #define _OSIP_PROXY_AUTHENTICATION_INFO_H_
 
-#include <osipparser2/headers/osip_authentication_info.h>
+#include <headers/osip_authentication_info.h>
 
 /**
  * @file osip_proxy_authentication_info.h

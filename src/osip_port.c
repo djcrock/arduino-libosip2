@@ -22,9 +22,9 @@
 #include <windows.h>
 #endif
 
-#include <osipparser2/internal.h>
+#include <internal.h>
 
-#include <osipparser2/osip_port.h>
+#include <osip_port.h>
 
 #ifdef HAVE_SYS_TYPES_H
 #include <sys/types.h>

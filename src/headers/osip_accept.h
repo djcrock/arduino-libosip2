@@ -20,7 +20,7 @@
 #ifndef _OSIP_ACCEPT_H_
 #define _OSIP_ACCEPT_H_
 
-#include <osipparser2/headers/osip_content_type.h>
+#include <headers/osip_content_type.h>
 
 /**
  * @file osip_accept.h

@@ -20,7 +20,7 @@
 #ifndef _OSIP_CONTENT_ENCODING_H_
 #define _OSIP_CONTENT_ENCODING_H_
 
-#include <osipparser2/headers/osip_content_length.h>
+#include <headers/osip_content_length.h>
 
 /**
  * @file osip_content_encoding.h

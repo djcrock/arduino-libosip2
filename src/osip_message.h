@@ -20,9 +20,9 @@
 #ifndef _OSIP_MESSAGE_H_
 #define _OSIP_MESSAGE_H_
 
-#include <osipparser2/osip_const.h>
-#include <osipparser2/osip_headers.h>
-#include <osipparser2/osip_body.h>
+#include <osip_const.h>
+#include <osip_headers.h>
+#include <osip_body.h>
 
 /**
  * @file osip_message.h

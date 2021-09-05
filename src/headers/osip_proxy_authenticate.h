@@ -20,7 +20,7 @@
 #ifndef _OSIP_PROXY_AUHTHENTICATE_H_
 #define _OSIP_PROXY_AUHTHENTICATE_H_
 
-#include <osipparser2/headers/osip_www_authenticate.h>
+#include <headers/osip_www_authenticate.h>
 
 /**
  * @file osip_proxy_authenticate.h

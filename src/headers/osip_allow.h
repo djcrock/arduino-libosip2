@@ -20,7 +20,7 @@
 #ifndef _OSIP_ALLOW_H_
 #define _OSIP_ALLOW_H_
 
-#include <osipparser2/headers/osip_content_length.h>
+#include <headers/osip_content_length.h>
 
 /**
  * @file osip_allow.h

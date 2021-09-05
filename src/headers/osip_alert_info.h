@@ -20,7 +20,7 @@
 #ifndef _OSIP_ALERT_INFO_H_
 #define _OSIP_ALERT_INFO_H_
 
-#include <osipparser2/headers/osip_call_info.h>
+#include <headers/osip_call_info.h>
 
 /**
  * @file osip_alert_info.h

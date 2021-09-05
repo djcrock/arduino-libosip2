@@ -20,8 +20,8 @@
 #ifndef _OSIP_MIME_VERSION_H_
 #define _OSIP_MIME_VERSION_H_
 
-#include <osipparser2/osip_list.h>
-#include <osipparser2/osip_uri.h>
+#include <osip_list.h>
+#include <osip_uri.h>
 
 /**
  * @file osip_mime_version.h

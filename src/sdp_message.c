@@ -17,12 +17,12 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <osipparser2/internal.h>
+#include <internal.h>
 
-#include <osipparser2/osip_const.h>
-#include <osipparser2/sdp_message.h>
-#include <osipparser2/osip_message.h>
-#include <osipparser2/osip_port.h>
+#include <osip_const.h>
+#include <sdp_message.h>
+#include <osip_message.h>
+#include <osip_port.h>
 
 #define ERR_ERROR -1  /* bad header */
 #define ERR_DISCARD 0 /* wrong header */

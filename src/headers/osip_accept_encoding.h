@@ -20,7 +20,7 @@
 #ifndef _OSIP_ACCEPT_ENCONDING_H_
 #define _OSIP_ACCEPT_ENCONDING_H_
 
-#include <osipparser2/osip_list.h>
+#include <osip_list.h>
 
 /**
  * @file osip_accept_encoding.h

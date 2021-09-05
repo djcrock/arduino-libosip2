@@ -20,7 +20,7 @@
 #ifndef _OSIP_RECORD_H_
 #define _OSIP_RECORD_H_
 
-#include <osipparser2/headers/osip_from.h>
+#include <headers/osip_from.h>
 
 /**
  * @file osip_route.h

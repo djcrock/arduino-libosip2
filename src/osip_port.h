@@ -43,9 +43,9 @@ int osip_snprintf(char *buf, int max, const char *fmt, ...);
 #define vsnprintf osip_vsnprintf
 #endif
 
-#include <osipparser2/osip_const.h>
+#include <osip_const.h>
 
-#include <osipparser2/osip_list.h>
+#include <osip_list.h>
 
 #define SIP_SYNTAX_ERROR (-1)
 #define SIP_NETWORK_ERROR (-2)

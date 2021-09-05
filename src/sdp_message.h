@@ -24,7 +24,7 @@
 #include <mpatrol.h>
 #endif
 
-#include <osipparser2/osip_list.h>
+#include <osip_list.h>
 
 /**
  * @file sdp_message.h

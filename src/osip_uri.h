@@ -20,8 +20,8 @@
 #ifndef _URLS_H_
 #define _URLS_H_
 
-#include <osipparser2/osip_const.h>
-#include <osipparser2/osip_list.h>
+#include <osip_const.h>
+#include <osip_list.h>
 
 /**
  * @file osip_uri.h

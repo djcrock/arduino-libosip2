@@ -33,7 +33,7 @@ documentation and/or software.
 
 #ifndef NO_MD5_SUPPORT
 
-#include <osipparser2/osip_md5.h>
+#include <osip_md5.h>
 
 /* Constants for MD5Transform routine.
  */

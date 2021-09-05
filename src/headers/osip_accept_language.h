@@ -20,7 +20,7 @@
 #ifndef _OSIP_ACCEPT_LANGUAGE_H_
 #define _OSIP_ACCEPT_LANGUAGE_H_
 
-#include <osipparser2/headers/osip_accept_encoding.h>
+#include <headers/osip_accept_encoding.h>
 
 /**
  * @file osip_accept_language.h

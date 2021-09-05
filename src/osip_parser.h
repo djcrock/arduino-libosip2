@@ -20,7 +20,7 @@
 #ifndef _OSIP_PARSER_H_
 #define _OSIP_PARSER_H_
 
-#include <osipparser2/osip_message.h>
+#include <osip_message.h>
 
 /**
  * @file osip_parser.h

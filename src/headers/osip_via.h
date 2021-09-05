@@ -20,7 +20,7 @@
 #ifndef _OSIP_VIA_H_
 #define _OSIP_VIA_H_
 
-#include <osipparser2/osip_list.h>
+#include <osip_list.h>
 
 /**
  * @file osip_via.h

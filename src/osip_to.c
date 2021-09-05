@@ -17,10 +17,10 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <osipparser2/internal.h>
+#include <internal.h>
 
-#include <osipparser2/osip_message.h>
-#include <osipparser2/osip_parser.h>
+#include <osip_message.h>
+#include <osip_parser.h>
 
 #ifndef MINISIZE
 int osip_to_init(osip_to_t **to) {

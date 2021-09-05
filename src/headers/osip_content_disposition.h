@@ -20,7 +20,7 @@
 #ifndef _OSIP_CONTENT_DISPOSITION_H_
 #define _OSIP_CONTENT_DISPOSITION_H_
 
-#include <osipparser2/headers/osip_call_info.h>
+#include <headers/osip_call_info.h>
 
 /**
  * @file osip_content_disposition.h

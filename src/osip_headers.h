@@ -20,37 +20,37 @@
 #ifndef _OSIP_HEADERS_H_
 #define _OSIP_HEADERS_H_
 
-#include <osipparser2/osip_port.h>
-#include <osipparser2/osip_const.h>
-#include <osipparser2/osip_uri.h>
+#include <osip_port.h>
+#include <osip_const.h>
+#include <osip_uri.h>
 
-#include <osipparser2/headers/osip_header.h>
-#include <osipparser2/headers/osip_accept.h>
-#include <osipparser2/headers/osip_accept_encoding.h>
-#include <osipparser2/headers/osip_accept_language.h>
-#include <osipparser2/headers/osip_alert_info.h>
-#include <osipparser2/headers/osip_allow.h>
-#include <osipparser2/headers/osip_authentication_info.h>
-#include <osipparser2/headers/osip_authorization.h>
-#include <osipparser2/headers/osip_call_id.h>
-#include <osipparser2/headers/osip_call_info.h>
-#include <osipparser2/headers/osip_contact.h>
-#include <osipparser2/headers/osip_content_disposition.h>
-#include <osipparser2/headers/osip_content_encoding.h>
-#include <osipparser2/headers/osip_content_length.h>
-#include <osipparser2/headers/osip_content_type.h>
-#include <osipparser2/headers/osip_cseq.h>
-#include <osipparser2/headers/osip_error_info.h>
-#include <osipparser2/headers/osip_from.h>
-#include <osipparser2/headers/osip_mime_version.h>
-#include <osipparser2/headers/osip_proxy_authenticate.h>
-#include <osipparser2/headers/osip_proxy_authentication_info.h>
-#include <osipparser2/headers/osip_proxy_authorization.h>
-#include <osipparser2/headers/osip_record_route.h>
-#include <osipparser2/headers/osip_route.h>
-#include <osipparser2/headers/osip_to.h>
-#include <osipparser2/headers/osip_via.h>
-#include <osipparser2/headers/osip_www_authenticate.h>
+#include <headers/osip_header.h>
+#include <headers/osip_accept.h>
+#include <headers/osip_accept_encoding.h>
+#include <headers/osip_accept_language.h>
+#include <headers/osip_alert_info.h>
+#include <headers/osip_allow.h>
+#include <headers/osip_authentication_info.h>
+#include <headers/osip_authorization.h>
+#include <headers/osip_call_id.h>
+#include <headers/osip_call_info.h>
+#include <headers/osip_contact.h>
+#include <headers/osip_content_disposition.h>
+#include <headers/osip_content_encoding.h>
+#include <headers/osip_content_length.h>
+#include <headers/osip_content_type.h>
+#include <headers/osip_cseq.h>
+#include <headers/osip_error_info.h>
+#include <headers/osip_from.h>
+#include <headers/osip_mime_version.h>
+#include <headers/osip_proxy_authenticate.h>
+#include <headers/osip_proxy_authentication_info.h>
+#include <headers/osip_proxy_authorization.h>
+#include <headers/osip_record_route.h>
+#include <headers/osip_route.h>
+#include <headers/osip_to.h>
+#include <headers/osip_via.h>
+#include <headers/osip_www_authenticate.h>
 
 /**
  * @file osip_headers.h
