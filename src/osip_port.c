@@ -124,8 +124,6 @@ int tracing_table[END_TRACE_LEVEL];
 static int use_syslog = 0;
 static osip_trace_func_t *trace_func = 0;
 
-static unsigned int random_seed_set = 0;
-
 #ifndef MINISIZE
 #if !defined(WIN32) && !defined(_WIN32_WCE)
 osip_malloc_func_t *osip_malloc_func = 0;
@@ -152,124 +150,6 @@ const char *osip_strerror(int err) {
 
   return osip_error_table[59];
 }
-
-#ifndef WIN32_USE_CRYPTO
-unsigned int osip_build_random_number()
-#else
-static unsigned int osip_fallback_random_number()
-#endif
-{
-  if (!random_seed_set) {
-    unsigned int ticks;
-
-#ifdef __PALMOS__
-#if __PALMOS__ < 0x06000000
-    SysRandom((Int32) TimGetTicks());
-#else
-    struct timeval tv;
-
-    gettimeofday(&tv, NULL);
-    srand(tv.tv_usec);
-    ticks = tv.tv_sec + tv.tv_usec;
-#endif
-#elif defined(WIN32)
-    LARGE_INTEGER lCount;
-
-    QueryPerformanceCounter(&lCount);
-    ticks = lCount.LowPart + lCount.HighPart;
-#elif defined(_WIN32_WCE)
-    ticks = GetTickCount();
-#elif defined(__PSOS__)
-#elif defined(__rtems__)
-    rtems_clock_get(RTEMS_CLOCK_GET_TICKS_SINCE_BOOT, &ticks);
-#elif defined(__VXWORKS_OS__)
-    struct timespec tp;
-
-    clock_gettime(CLOCK_REALTIME, &tp);
-    ticks = tp.tv_sec + tp.tv_nsec;
-#else
-    struct timeval tv;
-    int fd;
-
-    gettimeofday(&tv, NULL);
-    ticks = (unsigned int) (tv.tv_sec + tv.tv_usec);
-    fd = open("/dev/urandom", O_RDONLY);
-
-    if (fd > 0) {
-      unsigned int r;
-      int i;
-
-      for (i = 0; i < 512; i++) {
-        read(fd, &r, sizeof(r));
-        ticks += r;
-      }
-
-      close(fd);
-    }
-
-#endif
-
-#ifdef HAVE_LRAND48
-    srand48(ticks);
-#else
-    srand(ticks);
-#endif
-    random_seed_set = 1;
-  }
-
-#ifdef HAVE_LRAND48
-  {
-    int val = (int) lrand48();
-
-    if (val == 0) {
-      unsigned int ticks;
-      struct timeval tv;
-
-      gettimeofday(&tv, NULL);
-      ticks = (unsigned int) (tv.tv_sec + tv.tv_usec);
-      srand48(ticks);
-      return (unsigned int) lrand48();
-    }
-
-    return val;
-  }
-#else
-  return rand();
-#endif
-}
-
-#ifdef WIN32_USE_CRYPTO
-
-unsigned int osip_build_random_number() {
-  HCRYPTPROV crypto;
-  BOOL err;
-  unsigned int num;
-
-  if (!random_seed_set) {
-    unsigned int ticks;
-    LARGE_INTEGER lCount;
-
-    QueryPerformanceCounter(&lCount);
-    ticks = lCount.LowPart + lCount.HighPart;
-    srand(ticks);
-    random_seed_set = 1;
-  }
-
-  err = CryptAcquireContext(&crypto, NULL, NULL, PROV_RSA_FULL, CRYPT_VERIFYCONTEXT);
-
-  if (err) {
-    err = CryptGenRandom(crypto, sizeof(num), (BYTE *) &num);
-    CryptReleaseContext(crypto, 0);
-  }
-
-  if (!err) {
-    num = osip_fallback_random_number();
-  }
-
-  return num;
-}
-
-#endif
 
 #if defined(__linux)
 #include <limits.h>

@@ -178,12 +178,6 @@ void osip_free(void *);
 #endif
 
 /**************************/
-/* RANDOM number support  */
-/**************************/
-
-unsigned int osip_build_random_number(void);
-
-/**************************/
 /* TIMER support          */
 /**************************/
 
