@@ -17,7 +17,7 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <internal.h>
+#include <parser_internal.h>
 
 #include <osip_const.h>
 #include <sdp_message.h>

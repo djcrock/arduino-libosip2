@@ -22,7 +22,7 @@
 #include <windows.h>
 #endif
 
-#include <internal.h>
+#include <parser_internal.h>
 
 #include <osip_port.h>
 
