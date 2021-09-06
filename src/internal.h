@@ -115,7 +115,7 @@
 
 #ifndef DOXYGEN
 
-#if !(defined(__rtems__) || defined(__PALMOS__) || defined(HAVE_STRUCT_TIMEVAL))
+#if !(defined(__rtems__) || defined(__PALMOS__) || defined(HAVE_STRUCT_TIMEVAL) || defined(ESP8266))
 /* Struct timeval */
 struct timeval {
   long tv_sec;  /* seconds */
