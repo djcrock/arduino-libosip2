@@ -944,9 +944,7 @@ osip_transaction_t *osip_transaction_find(osip_list_t *transactions, osip_event_
  * @param osip The element to work on.
  * @param evt The element representing the SIP MESSAGE.
  */
-#ifdef OSIP_MONOTHREAD
 osip_transaction_t *osip_find_transaction(osip_t *osip, osip_event_t *evt);
-#endif
 
 osip_transaction_t *__osip_find_transaction(osip_t *osip, osip_event_t *evt, int consume);
 #endif

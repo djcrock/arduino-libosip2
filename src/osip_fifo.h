@@ -20,9 +20,6 @@
 #ifndef _FIFO_H_
 #define _FIFO_H_
 
-#ifndef OSIP_MONOTHREAD
-#include <osip_mt.h>
-#endif
 #include <osip_list.h>
 
 /**
@@ -60,10 +57,6 @@ typedef struct osip_fifo osip_fifo_t;
  * @struct osip_fifo
  */
 struct osip_fifo {
-#ifndef OSIP_MONOTHREAD
-  struct osip_mutex *qislocked; /**< mutex for fifo */
-  struct osip_sem *qisempty;    /**< semaphore for fifo */
-#endif
   osip_list_t queue;     /**< list of nodes containing elements */
   int nb_elt;            /**< nb of elements */
   osip_fifo_state state; /**< state of the fifo */
@@ -101,13 +94,6 @@ int osip_fifo_add(osip_fifo_t *ff, void *element);
  * @param ff The element to work on.
  */
 int osip_fifo_size(osip_fifo_t *ff);
-#ifndef OSIP_MONOTHREAD
-/**
- * Get an element from a fifo or block until one is added.
- * @param ff The element to work on.
- */
-void *osip_fifo_get(osip_fifo_t *ff);
-#endif
 /**
  * Try to get an element from a fifo, but do not block if there is no element.
  * @param ff The element to work on.
